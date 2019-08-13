@@ -1,0 +1,62 @@
+.projectSection {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    
+}
+
+.projectSection h3 {
+    font-size: 2rem;
+}
+
+.projects-container {
+    display: grid;
+    grid-template-columns: 40vw 40vw;
+    grid-template-rows: 40vh 40vh 40vh 40vh;
+    grid-template-areas: 
+        "pic1 pic3"
+        "pic2 pic3"
+        "pic4 pic5"
+        "pic4 pic6";
+    grid-gap: 3vh;
+    margin: 1rem;
+    justify-content: center;
+}
+
+.img {
+    min-width: 100%;
+    min-height: 100%;
+    display: block;
+    object-fit: cover;
+    width: 40vw;
+}
+
+#pic1 {
+    grid-area: pic1;
+    height: 40vh;
+}
+
+#pic2 {
+   grid-area: pic2;
+   height: 40vh;
+}
+
+#pic3 {
+    grid-area: pic3;
+    height: 83vh;
+}
+
+#pic4 {
+    grid-area: pic4;
+    height: 83vh;
+}
+
+#pic5 {
+    grid-area: pic5;
+    height: 40vh;
+}
+
+#pic6 {
+    grid-area: pic6;
+    height: 40vh;
+}
