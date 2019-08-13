@@ -1,0 +1,31 @@
+.navBar {
+    display: flex;
+    height: 50px;
+    background: #fff;
+}
+
+.navBar > img {
+    height: 50px;
+    margin-left: 20px;
+}
+
+.navBar > ul {
+    list-style-type: none;
+    margin-top: 20px;
+    padding: 0;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.navBar > ul > li {
+    display: inline;
+    margin-right: 50px;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+
+.navBar > ul> li:hover {
+    text-decoration: underline;
+}
+
