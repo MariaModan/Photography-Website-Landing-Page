@@ -5,7 +5,7 @@ body {
 }
 
 /* Nav */
-.navBar {
+.nav-bar {
     display: flex;
     height: 4vh;
     background: #fff;
@@ -14,15 +14,15 @@ body {
     top: 0;
     width: 100%;
     padding-bottom: 1rem;
-    border-bottom: 1px solid #000;
+    border-bottom: 2px solid #333;
 }
 
-.navBar > img {
+.nav-bar > img {
     height: 50px;
-    margin-left: 20px;
+    margin-left: 10px;
 }
 
-.navBar > ul {
+.nav-bar > ul {
     list-style-type: none;
     margin-top: 20px;
     padding: 0;
@@ -31,19 +31,20 @@ body {
     justify-content: flex-end;
 }
 
-.navBar > ul > li {
+.nav-bar > ul > li {
     display: inline;
-    margin-right: 50px;
-    font-size: 1.2rem;
+    margin-right: 20px;
+    font-size: 1.1rem;
     cursor: pointer;
+
 }
 
-.navBar > ul > li > a {
+.nav-bar > ul > li > a {
     text-decoration: none;
     color: #000;
 }
 
-.navBar > ul> li:hover {
+.nav-bar > ul> li:hover {
     text-decoration: underline;
 }
 
@@ -72,7 +73,7 @@ header {
 }
 
 header > h1 {
-    font-size: 4rem;
+    font-size: 3.5rem;
     margin: 0;
     text-shadow: 1px 2px 7px #000;
 }
@@ -85,28 +86,32 @@ header > p {
 }
 
 /* Projects */
-.projectSection {
+.project-section {
+    border-top: 2px dashed #333;
     display: flex;
     flex-direction: column;
     width: 100%;  
     padding-top: 4vh; 
+    padding-left: 0.2em;
+    padding-right: 0.2em;
 }
 
-.projectSection h3 {
-    font-size: 2rem;
+.project-section h3 {
+    font-size: 1.5rem;
     margin: 1em 0;
     justify-content: center;
     align-items: center;
     text-align: center;
+
 }
 
 .projects-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-auto-rows: repeat(auto-fill, minmax(100px, 1fr));
-    grid-gap: 1em;
+    grid-gap: 0.5em;
     margin: 1rem;
-    align-content: space-around;
+    align-content: space-around;;
 }
 
 .img {
@@ -146,3 +151,87 @@ header > p {
     grid-row: 4;
     height: 100%;
 }
+
+#pic7 {
+    grid-column: 1;
+    grid-row: 5;
+    height: 100%;
+}
+
+#pic8 {
+    grid-column: 1;
+    grid-row: 6;
+    height: 100%;
+}
+
+#pic9 {
+    grid-column: 2;
+    grid-row: 5/7;
+}
+
+/* About section */
+.about-section {
+    height: 50;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 2em 2em 0 2em;
+    margin-top: 4vh;
+
+}
+
+.about-section h3 {
+    font-size: 1.5rem;
+}
+
+#gill-img {
+    height:150px;
+    border-radius: 80px;
+    margin: 0 0 1em 0;
+}
+
+.about-section p {
+    font-size: 1.1em;  
+    margin: 0;
+}
+
+
+/* Contact */
+#contact {
+    margin-top: -30px;
+    margin-bottom: -30px;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 2em;  
+}
+
+#contact h3{
+    font-size: 1.5rem; 
+    margin: 0 0 1em 0; 
+}
+
+#contact p {
+    font-size: 1.1em;  
+    margin: 0;
+}
+
+.icons {
+    margin: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2em;
+}
+
+.icons img {
+    width: 50px;
+    cursor: pointer;
+}
+
+
