@@ -17,7 +17,7 @@ body {
     border-bottom: 2px solid #333;
 }
 
-.nav-bar > img {
+.nav-bar img {
     height: 50px;
     margin-left: 10px;
 }
@@ -76,18 +76,19 @@ header > h1 {
     font-size: 3.5rem;
     margin: 0;
     text-shadow: 1px 2px 7px #000;
+    padding: 0 1em;
 }
 
 header > p {
-    font-size: 2rem;
+    font-size: 1.5rem;
     margin: 0;
     margin-top: 0.5rem;
     text-shadow: 2px 3px 5px #000;
+    padding: 0 1em;
 }
 
 /* Projects */
 .project-section {
-    border-top: 2px dashed #333;
     display: flex;
     flex-direction: column;
     width: 100%;  
@@ -170,7 +171,7 @@ header > p {
 }
 
 /* About section */
-.about-section {
+#about {
     height: 50;
     display: flex;
     flex-direction: column;
@@ -182,7 +183,7 @@ header > p {
 
 }
 
-.about-section h3 {
+#about h3 {
     font-size: 1.5rem;
 }
 
@@ -192,7 +193,7 @@ header > p {
     margin: 0 0 1em 0;
 }
 
-.about-section p {
+#about p {
     font-size: 1.1em;  
     margin: 0;
 }
@@ -200,15 +201,15 @@ header > p {
 
 /* Contact */
 #contact {
-    margin-top: -30px;
-    margin-bottom: -30px;
+    margin: 0;
     height: 50vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding: 0 2em;  
+    padding: 0.5em 2em; 
+    border-bottom: 2px dashed #333;
 }
 
 #contact h3{
@@ -233,5 +234,91 @@ header > p {
     width: 50px;
     cursor: pointer;
 }
+#contact > img {
+    width:200px;
+    margin: 0;
+}
+
+@media(min-width: 700px){
+    .nav-bar > ul > li {
+        display: inline;
+        margin-right: 35px;
+        font-size: 1.2rem;
+        cursor: pointer;
+    }
+
+    header > h1 {
+        font-size: 4rem;
+    }
+    
+    header > p {
+        font-size: 2rem;
+    }
+
+    .about-contact {
+        display: grid;
+        grid-template-columns: 1fr 400px 400px 1fr;
+        margin-bottom: 2em;
+        border-bottom: 2px dashed #333;
+        padding-bottom: 3em;
+        grid-gap: 1.5em;
+    }
+
+    #about {
+        grid-column: 2;
+        margin:0;
+    }
+    
+    #contact {
+        grid-column: 3;
+        border: none;
+        height: 100%;
+        padding-top:1.9em;
+        margin:0;
+        justify-items: flex-start;
+    }
+
+    #contact > img {
+        margin-bottom: 2rem;
+    }
+
+
+    .icons {
+        width: 300px;
+    }
+
+    .projects-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-auto-rows: repeat(auto-fill, minmax(100px, 500px));
+        grid-gap: 0.7em;
+        align-items: start;
+        transition: 1s;
+    }
+
+    .projects-grid > img:hover {
+        transform: scale(1.1);
+    }
+
+    #pic4{
+        grid-column: 4;
+        grid-row: 1/3;
+    }
+
+    #pic7{
+        grid-column: 4;
+        grid-row:3;
+    }
+
+    #pic8{
+        grid-column: 1/3;
+        grid-row:3;
+    }
+
+    #pic9{
+        grid-column: 3;
+        grid-row:2/4;
+    }
+}    
 
 
